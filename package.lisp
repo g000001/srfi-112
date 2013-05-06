@@ -5,6 +5,7 @@
 (defpackage :srfi-112
   (:use)
   (:export :implementation-name 
+           :implementation-version 
            :cpu-architecture 
            :c-memory-model 
            :system-instance 
