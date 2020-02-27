@@ -1,8 +1,7 @@
 ;;;; srf-112.lisp
 
-(cl:in-package :srfi-112.internal)
+(cl:in-package "https://github.com/g000001/srfi-112#internals")
 
-;;; "srfi-112" goes here. Hacks and glory await!
 
 (defmacro define (name&args &body body)
   `(eval-when (:compile-toplevel :load-toplevel :execute)
@@ -17,10 +16,6 @@
 
 (define cpu-architecture #'cl:machine-type)
 
-
-(defun c-memory-model ()
-  cl:nil)
-    
 
 (define system-instance #'cl:machine-instance)
     

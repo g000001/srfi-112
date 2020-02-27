@@ -1,4 +1,5 @@
-* SRFI 112
+# SRFI 112 for CL: Environment Inquiry
+
 - Copyright (C) John Cowan 2013. All Rights Reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining

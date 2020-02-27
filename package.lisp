@@ -1,17 +1,20 @@
 ;;;; package.lisp
 
-(cl:in-package :cl-user)
+(cl:in-package cl-user)
 
-(defpackage :srfi-112
+
+(defpackage "https://github.com/g000001/srfi-112"
   (:use)
-  (:export :implementation-name 
-           :implementation-version 
-           :cpu-architecture 
-           :c-memory-model 
-           :system-instance 
-           :os-type 
-           :os-version ))
+  (:export implementation-name 
+           implementation-version 
+           cpu-architecture 
+           system-instance 
+           os-type 
+           os-version ))
 
-(defpackage :srfi-112.internal
-  (:use :srfi-112 :cl))
 
+(defpackage "https://github.com/g000001/srfi-112#internals"
+  (:use cl "https://github.com/g000001/srfi-112"))
+
+
+;;; *EOF*
